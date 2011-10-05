@@ -1,0 +1,22 @@
+This script, when placed in the corret SABnzbd folder, will automatically
+convert any MKV file that has a DTS audio track. It will add a AC3 audio
+track to the MKV video file as well as make it the first track in the MKV
+file and make it the default track. It will then delete any .dts file made.
+It also should delete any mkv with the word "sample" before the conversion
+starts.
+
+As of right now, the only edit the script needs is to point to the mkvdts2ac3
+script (created by JakeWharton, https://github.com/JakeWharton/mkvdts2ac3)
+At a later date when I get more expereince and time, I am going to try to
+just have a single script.
+
+The depedencies (all for Jake's script) are as follows
+Prerequisites
+
+Make sure the executables for the following libraries are accessible.
+
+mkvtoolnix - Matroska tools
+libdca - DTS to WAV decoder
+aften - WAV to AC3 encoder
+rsync - File transfer and synchronization
+Note: If you are a Mac OS X user you may need to compile these libraries.
